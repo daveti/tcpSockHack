@@ -1,0 +1,29 @@
+[daveti@localhost user]$ ./tcp_server
+TCP server pid [9523]
+
+
+
+Client pid/uid/gid [9524/77777/77777]
+socket2pid query time [19] us
+Client pid/uid/gid [9525/77777/77777]
+socket2pid query time [18] us
+
+^C
+
+
+
+
+============
+
+
+[daveti@localhost user]$ ./tcp_client 127.0.0.1
+TCP client pid [9511]
+Mon Oct  5 10:46:14 2015
+[daveti@localhost user]$ ./tcp_client 127.0.0.1
+TCP client pid [9524]
+Mon Oct  5 10:47:45 2015
+[daveti@localhost user]$ ./tcp_client 192.168.122.49
+TCP client pid [9525]
+Mon Oct  5 10:47:58 2015
+[daveti@localhost user]$ 
+
